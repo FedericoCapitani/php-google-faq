@@ -40,8 +40,68 @@ $FAQ = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google FAQ</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo{
+            display: flex;
+            align-items: flex-end;
+        }
+        .logo img{
+            padding-left: 1rem;
+            width: 120px;
+        }
+        .logo > p{
+            padding-left: 1rem; 
+            font-size: 35px; 
+        }
+        .menu{
+            display: flex;
+            column-gap: 2rem;
+            padding-top: 2rem;
+            padding-left: 1rem;
+            border-bottom: 1px solid grey;
+        }
+        .menu > p{
+            line-height: 2rem;
+        }
+        .active{
+            color: blue;
+            border-bottom: 3px solid blue;
+        }
+        main{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 5rem;
+        }
+    </style>
 </head>
 <body>
     
+    <header>
+        <div class="logo">
+            <img src="./img/logo_google.png" alt="">
+            <p>Privacy & Termini</p>
+        </div>
+        <div class="menu">
+            <p>Introduzione</p>
+            <p>Norme sulla privacy</p>
+            <p>Termin idi servizio</p>
+            <p>Tecnologie</p>
+            <p class="active">Domande frequenti</p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <?php foreach($FAQ as $element){
+                
+            }
+            ?>
+        </div>
+    </main>
+
 </body>
 </html>
