@@ -79,6 +79,9 @@ foreach($FAQs as $element){
         main > div > h2{
             padding: 2rem 0;
         }
+        main > div > p{
+            padding: 1rem 0;
+        }
     </style>
 </head>
 <body>
